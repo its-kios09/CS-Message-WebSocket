@@ -1,0 +1,19 @@
+{
+  "name": "cs-message-websocket",
+  "version": "1.0.0",
+  "description": "branch international | home take test",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/its-kios09/CS-Message-WebSocket.git"
+  },
+  "author": "Fredrick Kioko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/its-kios09/CS-Message-WebSocket/issues"
+  },
+  "homepage": "https://github.com/its-kios09/CS-Message-WebSocket#readme"
+}
