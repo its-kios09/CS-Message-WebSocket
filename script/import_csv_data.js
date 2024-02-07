@@ -1,7 +1,7 @@
 const fs = require('fs');
 const csv = require('csv-parser');
 const mongoose = require('mongoose');
-const Message = require('../models/import_csv_model');
+const Message = require('../models/model');
 const dotenv = require('dotenv');
 const path = require('path');
 
@@ -40,10 +40,7 @@ function importCsv() {
         });
 }
 
-mongoose.connect(process.env.DATABASE_LOCAL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
-}).then(async () => {
+mongoose.connect(process.env.DATABASE_LOCAL).then(async () => {
     console.log(`[itskios-09]: Database connection established`);
     await importCsv();
 }).catch(err => console.error(`💥 Database connection error: ${err}`));
